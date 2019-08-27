@@ -8,3 +8,5 @@ elif animal_habituado == 1:
     habituado = 1
 else: 
     print("COMANDO INVÁLIDO... TENTE NOVAMENTE...")
+
+print("Qualquer coisa")
