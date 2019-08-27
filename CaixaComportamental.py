@@ -1,3 +1,4 @@
+habituado = 0 #Variável de controle (habituado ou não habituado)
 animal_habituado = int(input("O ANIMAL ESTÁ HABITUADO? 0 -> NÃO | 1 -> SIM: "))
 
 if animal_habituado == 0:
