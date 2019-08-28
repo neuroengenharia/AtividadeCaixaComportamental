@@ -32,3 +32,22 @@ if primeiro_controle == 1: #Se passou pela etapa anterior
         segundo_controle = 1 #Passou
     else: 
         print("COMANDO INVÁLIDO...")
+
+terceiro_controle = 0 #Variável de controle (passou desta etapa ou não)
+if  primeiro_controle == 1: #Se passou pela etapa anterior        
+        print('Suas opções de som e barra: ')
+        print('1-Som 1: Phi')
+        print('2-Som 2: Trill')
+        print('3-Barra direita')
+        print('4-Barra esquerda')
+        som = int(input('Digite o som reproduzido: '))
+        Barra = int(input('Qual barra foi tocada: '))
+        if som == 1 and Barra == 4:
+            print('Recompensa liberada!')
+            print('PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...')
+        elif som == 2 and Barra == 3:
+            print('Recompensa liberada!')
+            print('PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...')
+        else:
+            print('Repetir o teste até que seja descriminado o som/barra.')
+
