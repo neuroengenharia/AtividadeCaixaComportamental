@@ -25,8 +25,10 @@ if habituado == 1:
 segundo_controle = 0 #Variável de controle (passou desta etapa ou não)
 if primeiro_controle == 1: #Se passou pela etapa anterior
     toques_barra = int(input("O ANIMAL TOCOU 20 VEZES NA BARRA? 0 -> NÃO | 1 -> SIM: "))
-    if toques_barra == 1:
+    if toques_barra == 0:
+        print("AINDA NÃO PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO. CONTINUE TREINANDO O ANIMAL...")
+    elif toques_barra == 1:
         print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
         segundo_controle = 1 #Passou
     else: 
-        print("AINDA NÃO PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO. CONTINUE TREINANDO O ANIMAL...")
+        print("COMANDO INVÁLIDO...")
