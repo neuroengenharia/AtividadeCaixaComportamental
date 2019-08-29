@@ -32,3 +32,13 @@ if primeiro_controle == 1: #Se passou pela etapa anterior
         segundo_controle = 1 #Passou
     else: 
         print("COMANDO INVÁLIDO...")
+
+#verificando se o experimento foi realizado 50x no intervalo de 30'
+if primeiro_controle ==1: #se ele passou da etapa anterior
+    QuantVezesMinuto = int(input("O EXPERIMENTO FOI REALIZADO 50x EM 30 MINUTOS? 0 -> NÃO | 1 -> SIM:"))
+    if QuantVezesMinuto == 0:
+        print("AINDA NÃO PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO. CONTINUE TREINANDO O ANIMAL...")
+    elif QuantVezesMinuto == 1:
+        print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
+    else:
+        print("COMANDO INVÁLIDO")
