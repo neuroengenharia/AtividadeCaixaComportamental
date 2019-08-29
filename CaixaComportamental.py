@@ -49,7 +49,7 @@ if  segundo_controle == 1: #Se passou pela etapa anterior
             print("LIBERAR 0.5ML DE RECOMPENSA...")
             terceiro_controle = 1
         else:
-            print("Repetir o teste até que seja descriminado o som/barra.")
+            print("Repetir o teste até que seja descriminado som e barra.")
 
 #Verificando se o experimento foi realizado 50x no intervalo de 30' e, conseguiu atingir o percentual mínimo de acertos
 if terceiro_controle == 1:
