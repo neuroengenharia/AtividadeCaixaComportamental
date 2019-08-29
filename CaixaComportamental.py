@@ -33,8 +33,28 @@ if primeiro_controle == 1: #Se passou pela etapa anterior
     else: 
         print("COMANDO INVÁLIDO...")
 
-#verificando se o experimento foi realizado 50x no intervalo de 30'
-if primeiro_controle ==1: #se ele passou da etapa anterior
+terceiro_controle = 0 #Variável de controle (passou desta etapa ou não)
+if  segundo_controle == 1: #Se passou pela etapa anterior        
+        print("Suas opções de som e barra: ")
+        print("1-Som 1: Phi")
+        print("2-Som 2: Trill")
+        print("3-Barra direita")
+        print("4-Barra esquerda")
+        som = int(input("Digite o som reproduzido: "))
+        Barra = int(input("Qual barra foi tocada: "))
+        if som == 1 and Barra == 4:
+            print("Recompensa liberada!")
+            print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
+            terceiro_controle = 1
+        elif som == 2 and Barra == 3:
+            print("Recompensa liberada!")
+            print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
+            terceiro_controle = 1
+        else:
+            print("Repetir o teste até que seja descriminado o som/barra.")
+
+#Verificando se o experimento foi realizado 50x no intervalo de 30'
+if terceiro_controle == 1: #se ele passou da etapa anterior
     QuantVezesMinuto = int(input("O EXPERIMENTO FOI REALIZADO 50x EM 30 MINUTOS? 0 -> NÃO | 1 -> SIM:"))
     if QuantVezesMinuto == 0:
         print("AINDA NÃO PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO. CONTINUE TREINANDO O ANIMAL...")
