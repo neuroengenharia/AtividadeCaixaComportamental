@@ -53,12 +53,12 @@ if  segundo_controle == 1: #Se passou pela etapa anterior
         else:
             print("Repetir o teste até que seja descriminado o som/barra.")
 
-#Verificando se o experimento foi realizado 50x no intervalo de 30'
-if terceiro_controle == 1: #se ele passou da etapa anterior
-    QuantVezesMinuto = int(input("O EXPERIMENTO FOI REALIZADO 50x EM 30 MINUTOS? 0 -> NÃO | 1 -> SIM:"))
-    if QuantVezesMinuto == 0:
-        print("AINDA NÃO PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO. CONTINUE TREINANDO O ANIMAL...")
-    elif QuantVezesMinuto == 1:
+#Verificando se o experimento foi realizado 50x no intervalo de 30' e, conseguiu atingir o percentual mínimo de acertos
+if terceiro_controle == 1:
+    quantVezesMinuto = int(input("O EXPERIMENTO FOI REALIZADO 50x EM 30 MINUTOS? 0 -> NÃO | 1 -> SIM:"))
+    porcentagem_acerto = float(input("QUAL FOI A PORCENTAGEM DE ACERTO? (PERCENTUAL MÍNIMO DE 62%) "))
+    #Se fez o total de experimentos no tempo limite e obteve o percentual minimo, passa para a próxima etapa.
+    if quantVezesMinuto == 1 and porcentagem_acerto >= 62.0 and porcentagem_acerto <= 100.0:
         print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
-    else:
-        print("COMANDO INVÁLIDO")
+    else: #Se as condições anteriores não foram satisfeitas, não passa para a proxima etapa.
+        print("AINDA NÃO PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO. CONTINUE TREINANDO O ANIMAL...")
