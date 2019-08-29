@@ -43,12 +43,10 @@ if  segundo_controle == 1: #Se passou pela etapa anterior
         som = int(input("Digite o som reproduzido: "))
         Barra = int(input("Qual barra foi tocada: "))
         if som == 1 and Barra == 4:
-            print("Recompensa liberada!")
-            print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
+            print("LIBERAR 0.5ML DE RECOMPENSA...")
             terceiro_controle = 1
         elif som == 2 and Barra == 3:
-            print("Recompensa liberada!")
-            print("PASSOU PARA A PRÓXIMA ETAPA DO EXPERIMENTO...")
+            print("LIBERAR 0.5ML DE RECOMPENSA...")
             terceiro_controle = 1
         else:
             print("Repetir o teste até que seja descriminado o som/barra.")
