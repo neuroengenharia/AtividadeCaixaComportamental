@@ -14,15 +14,18 @@ while animal_habituado != 1:
 primeiro_controle = 0 #Variável de controle (passou desta etapa ou não)
 if habituado == 1:
     comprimento_caixa = 30
-    aproximacao_animal = float(input("QUANTOS CENTÍMETROS O ANIMAL SE APROXIMOU? "))
-    
-    if aproximacao_animal > 0 and aproximacao_animal <= comprimento_caixa:
-        print("LIBERAR 0.5ML DE RECOMPENSA...")
-        primeiro_controle = 1 #Passou
-    elif aproximacao_animal == 0:
-        print("NÃO LIBERAR RECOMPENSA...")
-    else:
-        print("VALOR INVÁLIDO...")
+    aproximacao_animal = 0
+    while not(aproximacao_animal > 0 and aproximacao_animal <= comprimento_caixa):
+
+        aproximacao_animal = float(input("QUANTOS CENTÍMETROS O ANIMAL SE APROXIMOU? "))
+        
+        if aproximacao_animal > 0 and aproximacao_animal <= comprimento_caixa:
+            print("LIBERAR 0.5ML DE RECOMPENSA...")
+            primeiro_controle = 1 #Passou
+        elif aproximacao_animal == 0:
+            print("NÃO LIBERAR RECOMPENSA...")
+        else:
+            print("VALOR INVÁLIDO...")
 
 segundo_controle = 0 #Variável de controle (passou desta etapa ou não)
 if primeiro_controle == 1: #Se passou pela etapa anterior
