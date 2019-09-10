@@ -7,3 +7,7 @@ Este programa foi desenvolvido com o Python (versão 3.7.4) para simular o funci
 - Liberação de 0,5mL de recompensa mediante toque na barra esquerda em resposta ao som1
 - Liberação de 0,5mL de recompensa mediante toque na barra direita em resposta ao som2
 - Prosseguimento à fase seguinte caso o experimento tenha sido realizado 50 vezes no intervalo de 30 minutos e, tenha ocorrido 62% de acertos.
+
+# WIKI
+
+Para mais informações sobre o projeto, acesse a [Wiki](https://github.com/neuroengenharia/AtividadeCaixaComportamental/wiki).
