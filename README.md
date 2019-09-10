@@ -8,6 +8,27 @@ Este programa foi desenvolvido com o Python (versão 3.7.4) para simular o funci
 - Liberação de 0,5mL de recompensa mediante toque na barra direita em resposta ao som2
 - Prosseguimento à fase seguinte caso o experimento tenha sido realizado 50 vezes no intervalo de 30 minutos e, tenha ocorrido 62% de acertos.
 
+# RECURSOS NECESSÁRIOS
+Para contribuir com o projeto, tudo deve funcionar corretamente. Para isso, certifique-se que você possuí instalados:
+
+- Python 3.7.4
+- Git
+- Visual Studio Code
+- Github
+
+# FAZER O FORK
+
+- Faça o login na sua conta do GITHUB
+- Acesse o projeto: [(LINK DO PROJETO)](https://github.com/neuroengenharia/AtividadeCaixaComportamental/)
+- Clique em Fork
+- Aguarde o processo ser concluído
+- Você será redirecionado para uma cópia do projeto em seu GITHUB
+
+# FAZER O CLONE
+Para que você possa colaborar no desenvolvimento do projeto é necessário fazer o clone,ou seja, criar uma cópia local em sua máquina. Para fazer o clone use o seguinte comando no terminal:
+
+- git clone https://github.com/SubstituaPeloSeuUsuário/AtividadeCaixaComportamental
+
 # WIKI
 
 Para mais informações sobre o projeto, acesse a [Wiki](https://github.com/neuroengenharia/AtividadeCaixaComportamental/wiki).
